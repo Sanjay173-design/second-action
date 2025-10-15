@@ -1,0 +1,15 @@
+name: SanjayWorkFlow
+
+on:
+ push:
+   branches: [ main ]
+
+
+jobs:
+  SecondJob:
+     runs-on: ubuntu-latest
+
+     steps:
+      - name: greet
+        run: echo "AlienX"
+     
