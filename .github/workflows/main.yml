@@ -1,15 +1,14 @@
 name: SanjayWorkFlow
 
 on:
- push:
-   branches: [ main ]
-
-
+ schedule:
+   - cron: "0 0 * * *"
+   
 jobs:
-  SecondJob:
+  thirdJob:
      runs-on: ubuntu-latest
 
      steps:
-      - name: greet
-        run: echo "AlienX"
+      - name: print
+        run: echo "Scheduled AlienX"
      
